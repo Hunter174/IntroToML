@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neural Networks - Hunter's ML Learning Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/">🏠 Home</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/introduction_to_ml/">Intro to ML</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/linear_models/">Linear Models</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/classification/">Classification</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/neural_networks/">Neural Networks</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/deep_learning/">Deep Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/unsupervised_learning/">Unsupervised Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/real_world_projects/">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Neural Networks</h1>
+
+    <p>Welcome to the foundations of Neural Networks! In this section, we'll explore how simple "artificial neurons" can be combined to create powerful models capable of learning complex patterns.</p>
+
+    <h2>Quick Navigation</h2>
+    <ul>
+      <li><a href="#perceptron">The Perceptron</a></li>
+      <li><a href="#feedforward">Feedforward Neural Networks</a></li>
+      <li><a href="#activation-functions">Activation Functions</a></li>
+      <li><a href="#additional-resources">Additional Resources</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="section-light" id="perceptron">
+      <h2>📚 The Perceptron</h2>
+
+      <p>The Perceptron is one of the simplest types of artificial neurons, designed in the 1950s. It takes several binary inputs, multiplies them by weights, sums them up, and applies an activation function to produce a binary output.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/perceptron_diagram.png" alt="Perceptron Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>It can solve simple classification tasks where data is **linearly separable**.</p>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=ntKn5TPHHAk" target="_blank">StatQuest: The Perceptron Explained</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="feedforward">
+      <h2>📚 Feedforward Neural Networks</h2>
+
+      <p>Feedforward Neural Networks (FNNs) are the natural extension of the perceptron — layers of neurons stacked together, where information flows forward from input to output without loops.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/feedforward_nn.png" alt="Feedforward Neural Network Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>Each layer transforms the data slightly, helping the network to learn complex representations over multiple layers.</p>
+
+      <h3>Key Concepts:</h3>
+      <ul>
+        <li><strong>Input Layer</strong> — Raw data input.</li>
+        <li><strong>Hidden Layers</strong> — Layers that learn intermediate features.</li>
+        <li><strong>Output Layer</strong> — Final prediction or classification.</li>
+      </ul>
+
+      <h3>🎮 Interactive Demo:</h3>
+      <ul>
+        <li><a href="https://playground.tensorflow.org/" target="_blank">Play with a neural network in TensorFlow Playground</a></li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank">3Blue1Brown: But what *is* a Neural Network?</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="activation-functions">
+      <h2>📚 Activation Functions</h2>
+
+      <p>Activation functions allow neural networks to model complex, non-linear patterns. Without them, networks would just be stacks of linear functions — not very useful!</p>
+
+      <div class="image-center">
+        <img src="../assets/images/activation_functions.png" alt="Common Activation Functions" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <h3>Common Activation Functions:</h3>
+      <ul>
+        <li><strong>Sigmoid</strong> — Good for probabilities (outputs between 0 and 1).</li>
+        <li><strong>ReLU (Rectified Linear Unit)</strong> — Very popular, fast training for deep networks.</li>
+        <li><strong>Tanh</strong> — Output between -1 and 1, used in certain cases.</li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=-7scQpJT7uo" target="_blank">StatQuest: Activation Functions Explained</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="additional-resources">
+      <h2>📚 Additional Resources</h2>
+      <ul>
+        <li><a href="https://cs231n.github.io/neural-networks-1/" target="_blank">CS231n: Neural Networks Part 1</a> (Highly recommended classic)</li>
+        <li><a href="https://www.deeplearningbook.org/" target="_blank">The Deep Learning Book (Ian Goodfellow)</a></li>
+      </ul>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../deep_learning/" class="next-button">Next: Deep Learning →</a>
+    </div>
+
+    <hr>
+
+    <p style="text-align:center;">Built with ❤️ by Hunter</p>
+  </div>
+
+</body>
+</html>

@@ -4,60 +4,88 @@
   <meta charset="UTF-8">
   <title>Hunter's ML Learning Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    a {
-      color: #1e90ff;
-    }
-    iframe {
-      margin: 20px 0;
-      width: 100%;
-      height: 400px;
-    }
-    hr {
-      margin: 40px 0;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <h1>Getting Started with Machine Learning</h1>
-  <p>Welcome! This page contains all the materials I've used while learning Machine Learning, including videos, notes, and links to lecture materials to help beginners get started</p>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="../index.html">🏠 Home</a></li>
+      <li><a href="../introduction_to_ml/">Intro to ML</a></li>
+      <li><a href="../linear_models/">Linear Models</a></li>
+      <li><a href="../classification/">Classification</a></li>
+      <li><a href="../neural_networks/">Neural Networks</a></li>
+      <li><a href="../deep_learning/">Deep Learning</a></li>
+      <li><a href="../unsupervised_learning/">Unsupervised Learning</a></li>
+      <li><a href="../real_world_projects/">Projects</a></li>
+    </ul>
+  </nav>
 
-  <h2>Choose Your Skill Level</h2>
-  <ul>
-    <li><a href="beginner.html"> Beginner</a> — Learn Python, basic math, and buil your first ML model</li>
-    <li><a href="intermediate.html"> Intermediate</a> — Dive into end-to-end ML workflows</li>
-    <li><a href="advanced.html"> Advanced</a> — Explore deep learning, transformers, and MLOps</li>
-  </ul>
+  <div class="container">
 
-  <h2>📹 Featured Video</h2>
-  <iframe src="https://www.youtube.com/embed/aircAruvnKk" frameborder="0" allowfullscreen></iframe>
+    <h1>What is Machine Learning?</h1>
 
-  <h2>📚 Topics & Notes</h2>
-  <ul>
-    <li><a href="eda.html">Exploratory Data Analysis</a></li>
-    <li><a href="features.html">Feature Engineering</a></li>
-    <li><a href="random_forests.html">Random Forests</a></li>
-    <li><a href="neural_nets.html">Neural Networks</a></li>
-  </ul>
+    <p>This website is a curated collection of the resources, notes, and materials I've used to learn Machine Learning. Whether you're just getting started or looking to deepen your skills, there's something here for you!</p>
 
-  <h2>🔗 External Resources</h2>
-  <ul>
-    <li><a href="https://cs229.stanford.edu/">CS229: Stanford ML Notes</a></li>
-    <li><a href="https://www.coursera.org/learn/machine-learning">Andrew Ng's ML Course</a></li>
-  </ul>
+    <div class="image-center">
+          <img src="assets/images/ml_bubble.png" alt="Ai is the broad scope of computers that think like people" style="width: 100%; max-width: 600px; border-radius: 8px;">
+    </div>
 
-  <hr>
-  <p>Built with ❤️ by Hunter</p>
+    <p>If you enjoy a guided learning experience, continue below where I walk you through each step toward mastering ML. If you're more independent and want to explore Machine Learning on your own, here are two of my favorite creators who explain core concepts brilliantly:</p>
+
+    <ul>
+      <li><a href="https://www.3blue1brown.com/" target="_blank">3Blue1Brown</a> — Visual, intuitive explanations of math and deep learning concepts.</li>
+      <li><a href="https://www.youtube.com/@statquest" target="_blank">StatQuest with Josh Starmer</a> — Clear, beginner-friendly breakdowns of statistics, ML algorithms, and more.</li>
+    </ul>
+
+    <h2>Before You Begin</h2>
+    <p>Machine Learning — and Data Science more broadly — heavily relies on programming skills to build and deploy models. If you're not already familiar with Python, I highly recommend starting there.</p>
+
+    <p>One of the best beginner-friendly resources is:</p>
+    <ul>
+      <li><strong><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools: Python Tutorial</a></strong></li>
+    </ul>
+
+    <p>In addition to Python, two core libraries you'll frequently use are:</p>
+    <ul>
+      <li><strong><a href="https://www.w3schools.com/python/numpy_intro.asp" target="_blank">NumPy</a></strong> — for fast numerical operations, arrays, and efficient computations.</li>
+      <li><strong><a href="https://www.w3schools.com/python/pandas_intro.asp" target="_blank">Pandas</a></strong> — for loading, exploring, cleaning, and manipulating datasets.</li>
+    </ul>
+
+    <p>If you're still building confidence with programming, don't worry — many ML practitioners use tools like ChatGPT to assist with coding questions and exploring new libraries. Used wisely, it can accelerate your learning journey.</p>
+
+    <h2>Getting Started with Tools</h2>
+    <p>Once you're comfortable with basic Python concepts like functions and classes, it's time to set up your machine learning environment.</p>
+
+    <p>My recommended environment for beginners is <strong>Jupyter Notebooks</strong>, which allows you to easily write, run, and visualize your code in small chunks. To install Jupyter (and many other useful tools), we’ll use a distribution called <strong>Anaconda</strong>.</p>
+
+    <p><a href="https://www.anaconda.com/products/distribution" target="_blank">👉 Download Anaconda Here</a></p>
+
+    <h3>What is Anaconda and Why Use It?</h3>
+    <p><strong>Anaconda</strong> is a free and open-source distribution of Python (and R) focused on data science, machine learning, and AI workflows. It comes bundled with Jupyter Notebooks, NumPy, Pandas, Matplotlib, and over 250+ other packages — saving you time and avoiding complicated installations.</p>
+
+    <ul>
+      <li>✅ Easy package management with <code>conda</code></li>
+      <li>✅ Pre-installed libraries for ML and Data Science</li>
+      <li>✅ Cross-platform: works on Windows, Mac, and Linux</li>
+      <li>✅ Great for building reproducible environments</li>
+    </ul>
+
+    <p>After installing Anaconda, you'll be ready to start coding right away in Jupyter and dive into ML projects!</p>
+
+    <h2>Ready to Get Started?</h2>
+    <ul>
+      <li><a href="introduction_to_ml/">Introduction to Machine Learning</a> — Understand what ML is, types of ML, and real-world examples.</li>
+      <li><a href="linear_models/">Linear Models</a> — Dive into Linear Regression and Logistic Regression fundamentals.</li>
+      <li><a href="classification/">Classification</a> — Learn classification algorithms like Decision Trees, Random Forests, and k-NN.</li>
+      <li><a href="neural_networks/">Foundations of Neural Networks</a> — Explore how basic neural networks function and how they learn.</li>
+      <li><a href="deep_learning/">Deep Learning Essentials</a> — Go deeper into CNNs, RNNs, and Transformers.</li>
+      <li><a href="unsupervised_learning/">Unsupervised Learning</a> — Discover clustering and dimensionality reduction techniques.</li>
+      <li><a href="real_world_projects/">Real-World Projects</a> — Build full ML pipelines and real-world projects step-by-step.</li>
+    </ul>
+
+    <hr>
+    <p>Built with ❤️ by Hunter</p>
+  </div>
 </body>
 </html>

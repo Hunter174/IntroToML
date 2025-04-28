@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deep Learning - Hunter's ML Learning Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/">🏠 Home</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/introduction_to_ml/">Intro to ML</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/linear_models/">Linear Models</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/classification/">Classification</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/neural_networks/">Neural Networks</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/deep_learning/">Deep Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/unsupervised_learning/">Unsupervised Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/real_world_projects/">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Deep Learning</h1>
+
+    <p>Deep Learning takes the principles of Neural Networks and scales them up — deeper layers, more complex data, and incredible new applications like computer vision, language understanding, and creative AI.</p>
+
+    <h2>Quick Navigation</h2>
+    <ul>
+      <li><a href="#what-is-deep-learning">What is Deep Learning?</a></li>
+      <li><a href="#cnn">Convolutional Neural Networks (CNNs)</a></li>
+      <li><a href="#rnn">Recurrent Neural Networks (RNNs)</a></li>
+      <li><a href="#transformers">Transformers</a></li>
+      <li><a href="#additional-resources">Additional Resources</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="section-light" id="what-is-deep-learning">
+      <h2>📚 What is Deep Learning?</h2>
+
+      <p>Deep Learning refers to neural networks with many layers — allowing them to learn hierarchical patterns in data. It's behind modern AI breakthroughs like image recognition, machine translation, and self-driving cars.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/deep_network_diagram.png" alt="Deep Neural Network Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>While a basic neural network might have 1-2 hidden layers, deep learning models can have dozens or hundreds!</p>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank">3Blue1Brown: But what *is* a Neural Network?</a> (great foundation for Deep Learning too!)</li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="cnn">
+      <h2>📷 Convolutional Neural Networks (CNNs)</h2>
+
+      <p>CNNs are specialized for image and spatial data. Instead of connecting every neuron to every input pixel, they scan small regions (filters) to detect features like edges, corners, and patterns.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/cnn_diagram.png" alt="Convolutional Neural Network Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>CNNs are used for:</p>
+      <ul>
+        <li>Image classification (cats vs dogs)</li>
+        <li>Object detection (finding people in photos)</li>
+        <li>Medical imaging (detecting tumors)</li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=YRhxdVk_sIs" target="_blank">StatQuest: Convolutional Neural Networks</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="rnn">
+      <h2>🔁 Recurrent Neural Networks (RNNs)</h2>
+
+      <p>RNNs are designed for sequential data — where past information influences future predictions. They "loop back" into themselves, allowing information to persist over time.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/rnn_diagram.png" alt="Recurrent Neural Network Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>Applications include:</p>
+      <ul>
+        <li>Language modeling (predicting the next word)</li>
+        <li>Speech recognition</li>
+        <li>Time series forecasting</li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=LHXXI4-IEns" target="_blank">StatQuest: Recurrent Neural Networks (RNNs)</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="transformers">
+      <h2>🔥 Transformers</h2>
+
+      <p>Transformers revolutionized deep learning by allowing models to attend to different parts of input data at once — no more sequential processing bottleneck! Transformers are now the backbone of state-of-the-art models like ChatGPT, BERT, and Stable Diffusion.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/transformer_diagram.png" alt="Transformer Model Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>Key ideas:</p>
+      <ul>
+        <li><strong>Attention Mechanism</strong> — Focus on important parts of input</li>
+        <li><strong>Self-Attention</strong> — Understand relationships between words in a sentence</li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=4Bdc55j80l8" target="_blank">StatQuest: Transformers Explained Clearly</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="additional-resources">
+      <h2>📚 Additional Resources</h2>
+      <ul>
+        <li><a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">The Illustrated Transformer (Jay Alammar)</a></li>
+        <li><a href="https://cs231n.github.io/convolutional-networks/" target="_blank">CS231n: Convolutional Networks</a></li>
+        <li><a href="https://huggingface.co/transformers/" target="_blank">HuggingFace Transformers Library</a></li>
+      </ul>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../unsupervised_learning/" class="next-button">Next: Unsupervised Learning →</a>
+    </div>
+
+    <hr>
+
+    <p style="text-align:center;">Built with ❤️ by Hunter</p>
+  </div>
+
+</body>
+</html>

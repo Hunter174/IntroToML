@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unsupervised Learning - Hunter's ML Learning Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/">🏠 Home</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/introduction_to_ml/">Intro to ML</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/linear_models/">Linear Models</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/classification/">Classification</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/neural_networks/">Neural Networks</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/deep_learning/">Deep Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/unsupervised_learning/">Unsupervised Learning</a></li>
+      <li><a href="https://hunterpaxton.github.io/IntroToML/real_world_projects/">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Unsupervised Learning</h1>
+
+    <p>Unlike supervised learning, unsupervised learning deals with unlabeled data. The goal is to uncover hidden patterns or structures within the data without explicit guidance.</p>
+
+    <h2>Quick Navigation</h2>
+    <ul>
+      <li><a href="#what-is-unsupervised-learning">What is Unsupervised Learning?</a></li>
+      <li><a href="#clustering">Clustering</a></li>
+      <li><a href="#dimensionality-reduction">Dimensionality Reduction</a></li>
+      <li><a href="#additional-resources">Additional Resources</a></li>
+    </ul>
+
+    <hr>
+
+    <div class="section-light" id="what-is-unsupervised-learning">
+      <h2>📚 What is Unsupervised Learning?</h2>
+
+      <p>In unsupervised learning, the algorithm tries to learn patterns directly from input data without any labeled outputs. It's like giving a student a bunch of jigsaw puzzle pieces without a picture — they must figure out the pattern themselves!</p>
+
+      <div class="image-center">
+        <img src="../assets/images/unsupervised_learning_diagram.png" alt="Unsupervised Learning Diagram" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <p>Common tasks include clustering and dimensionality reduction.</p>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=8jybEj2AUkE" target="_blank">StatQuest: What is Unsupervised Learning?</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="clustering">
+      <h2>📚 Clustering</h2>
+
+      <p>Clustering involves grouping similar data points together based on their features. The algorithm tries to separate the data into natural groups without any pre-assigned labels.</p>
+
+      <h3>1. k-Means Clustering</h3>
+      <p>One of the simplest and most popular clustering methods — it partitions data into 'k' groups by minimizing the distance between points and their assigned cluster center.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/kmeans_example.png" alt="k-Means Clustering Example" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <h3>2. DBSCAN</h3>
+      <p>A powerful clustering method that can find clusters of arbitrary shape and handle noise/outliers better than k-Means.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/dbscan_example.png" alt="DBSCAN Clustering Example" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <h3>🎮 Interactive Demo:</h3>
+      <ul>
+        <li><a href="https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html" target="_blank">Compare clustering algorithms (scikit-learn demo)</a></li>
+      </ul>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=4b5d3muPQmA" target="_blank">StatQuest: Clustering (k-Means Explained)</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="dimensionality-reduction">
+      <h2>📚 Dimensionality Reduction</h2>
+
+      <p>Dimensionality reduction involves projecting high-dimensional data into lower dimensions while preserving structure — making data easier to visualize and work with.</p>
+
+      <h3>1. Principal Component Analysis (PCA)</h3>
+      <p>PCA reduces data into principal components that capture the most variance. Great for visualizing high-dimensional datasets!</p>
+
+      <div class="image-center">
+        <img src="../assets/images/pca_example.png" alt="PCA Example" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <h3>2. t-SNE (t-distributed Stochastic Neighbor Embedding)</h3>
+      <p>t-SNE projects data into 2D/3D space, emphasizing clusters and local structures — often used for visualizing hidden patterns.</p>
+
+      <div class="image-center">
+        <img src="../assets/images/tsne_example.png" alt="t-SNE Example" style="max-width:100%; border-radius:8px;">
+      </div>
+
+      <h3>🎥 Recommended Video:</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=4vGiHC35j9s" target="_blank">StatQuest: PCA Clearly Explained</a></li>
+        <li><a href="https://www.youtube.com/watch?v=RJVL80Gg3lA" target="_blank">StatQuest: t-SNE Explained</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <div class="section-light" id="additional-resources">
+      <h2>📚 Additional Resources</h2>
+      <ul>
+        <li><a href="https://scikit-learn.org/stable/modules/clustering.html" target="_blank">scikit-learn: Clustering Documentation</a></li>
+        <li><a href="https://scikit-learn.org/stable/modules/decomposition.html" target="_blank">scikit-learn: Dimensionality Reduction Documentation</a></li>
+      </ul>
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+      <a href="../real_world_projects/" class="next-button">Next: Real-World Projects →</a>
+    </div>
+
+    <hr>
+
+    <p style="text-align:center;">Built with ❤️ by Hunter</p>
+  </div>
+
+</body>
+</html>
